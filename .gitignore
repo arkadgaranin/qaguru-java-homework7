@@ -35,3 +35,6 @@ target/
 /gradlew
 /gradlew.bat
 /gradle/
+
+# Resources files
+!zip_with_password.zip
