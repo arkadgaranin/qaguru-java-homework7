@@ -21,9 +21,16 @@ dependencies {
             "com.codeborne:selenide:5.20.1",
             "org.slf4j:slf4j-simple:1.7.30",
             "org.assertj:assertj-core:3.21.0",
+            "com.codeborne:pdf-test:1.7.0",
+            "com.codeborne:xls-test:1.4.3",
+            "net.lingala:zip4j:1.3.3",
             "org.junit.jupiter:junit-jupiter-api:${junitVersion}")
 
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
 }
 
 test {
